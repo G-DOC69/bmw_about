@@ -26,7 +26,13 @@
                         <div class="burger_elems">
                             <iconify-icon style="color: rgb(116, 116, 116);" icon="ion:location-outline" width="20" height="20"></iconify-icon>
                             <iconify-icon style="color: rgb(116, 116, 116);" icon="carbon:search" width="20" height="20"></iconify-icon>
-                            <iconify-icon style="color: rgb(116, 116, 116);" class="burger" icon="iconamoon:menu-burger-horizontal-thin" width="32" height="32"></iconify-icon>
+                            <iconify-icon style="color: rgb(116, 116, 116);" class="burger" onclick="toggleMenu()" icon="iconamoon:menu-burger-horizontal-thin" width="32" height="32"></iconify-icon>
+                        </div>
+                        <div id="menu">
+                            <a class="menu_item" href="#">Автомобили</a>
+                            <a class="menu_item" href="#">Электромобили</a>
+                            <a class="menu_item" href="#">Онлайн Магазин</a>
+                            <a class="menu_item" href="#">Больше о BMW</a>
                         </div>
                     </div>
                 </nav>
@@ -205,6 +211,10 @@
                 }
                 slides[slideIndex-1].style.display = "block";
                 dots[slideIndex-1].className += " active";
+                }
+                function toggleMenu() {
+                const menu = document.getElementById('menu');
+                menu.classList.toggle('show');
                 }
             </script>
         </main>
