@@ -13,9 +13,15 @@
 <body>
     <div class="wrapper">
         <main>
+            <div id="menu"> <!-- вот это нужно для бургера -->
+                <a href="#">Автомобили</a> <!-- вот это нужно для бургера -->
+                <a href="#">Электромобили</a><!-- вот это нужно для бургера -->
+                <a href="#">Онлайн Магазин</a><!-- вот это нужно для бургера -->
+                <a href="#">Больше о BMW</a><!-- вот это нужно для бургера -->
+            </div><!-- вот это нужно для бургера -->
             <div class="section">
                 <nav>
-                    <iconify-icon style="color: rgb(116, 116, 116);" icon="simple-icons:bmw" height="52" width="52"></iconify-icon>
+                    <iconify-icon id="main_logo" style="color: rgb(116, 116, 116);" icon="simple-icons:bmw" height="52" width="52"></iconify-icon>
                     <div class="navbar">
                         <div class="nav_elems">
                             <a class="nav_element" href="">Автомобили</a>
@@ -26,13 +32,7 @@
                         <div class="burger_elems">
                             <iconify-icon style="color: rgb(116, 116, 116);" icon="ion:location-outline" width="20" height="20"></iconify-icon>
                             <iconify-icon style="color: rgb(116, 116, 116);" icon="carbon:search" width="20" height="20"></iconify-icon>
-                            <iconify-icon style="color: rgb(116, 116, 116);" class="burger" onclick="toggleMenu()" icon="iconamoon:menu-burger-horizontal-thin" width="32" height="32"></iconify-icon>
-                        </div>
-                        <div id="menu">
-                            <a class="menu_item" href="#">Автомобили</a>
-                            <a class="menu_item" href="#">Электромобили</a>
-                            <a class="menu_item" href="#">Онлайн Магазин</a>
-                            <a class="menu_item" href="#">Больше о BMW</a>
+                            <iconify-icon style="color: rgb(116, 116, 116);" class="burger" onclick="toggleMenu()" icon="iconamoon:menu-burger-horizontal-thin" width="32" height="32"></iconify-icon><!-- вот это нужно для бургера -->
                         </div>
                     </div>
                 </nav>
@@ -188,7 +188,7 @@
                 </div>
             </div>
             <div class="br_section"></div>
-            <script >
+            <script >//вот это нужно для бургера
                 let slideIndex = 1;
                 showSlides(slideIndex);
                 function plusSlides(n) {
@@ -212,11 +212,11 @@
                 slides[slideIndex-1].style.display = "block";
                 dots[slideIndex-1].className += " active";
                 }
-                function toggleMenu() {
-                const menu = document.getElementById('menu');
-                menu.classList.toggle('show');
-                }
-            </script>
+                function toggleMenu() { //вот это нужно для бургера
+                const menu = document.getElementById('menu');//вот это нужно для бургера
+                menu.classList.toggle('show');//вот это нужно для бургера
+                }//вот это нужно для бургера
+            </script> <!-- вот это нужно для бургера -->
         </main>
         <footer>
             <div class="section footer_section">

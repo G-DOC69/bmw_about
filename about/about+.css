@@ -207,29 +207,30 @@ nav{
     padding: 0 0 40px 0;
     width: 85%;
 }
-#menu {
+#menu { /*вот это нужно для бургера*/
     display: none;
-    position: absolute;
-    top: 10%;
-    right: 10%;
+    position: fixed;
     z-index: 3;
-    width: fit-content;
+    text-justify:center;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: fit-content;
+    height: 40%;
     background-color: white;
     padding-top: 30px;
-    padding-bottom:20px;
-    border: solid 2px;
+    padding-bottom:20px;    justify-content: end;
+    flex-direction: column;
+    align-items: start;
+    border: solid 1px;
     border-color: black;
-    border-radius: 7px;
-    transition: 0.4s ease-in;
+    border-bottom-left-radius:7px; border-bottom-right-radius:7px;
 }
-#menu a {
+#main_logo{ /*вот это нужно для бургера*/
+    z-index: 5;
+}
+#menu a { /*вот это нужно для бургера*/
     display: block;
     text-decoration: none;
     color: #333;
-}
-.menu_item{
     margin-left: 20px;
     margin-top:10px;
     margin-bottom: 15px;
@@ -237,12 +238,8 @@ nav{
     width: 200px;
     border-radius: 3px;
 }
-.menu_item:hover{
-    color: aquamarine;
-}
-#menu.show {
-   display: block;
-   transition: 0.4s ease-in;
+#menu.show { /*вот это нужно для бургера*/
+   display: flex;
 }
 @media screen and (max-width:768px) {
     .slideshow-container{
@@ -275,8 +272,9 @@ nav{
     .nav_elems{
         display: none;
     }
-    .burger{
+    .burger{ /*вот это нужно для бургера*/
         display: block;
+        z-index: 5;
     }
     .promo_button{
         width: 130px;
