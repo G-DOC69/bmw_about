@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./auto.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto+Condensed:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <div id="menu_shadow"></div>
+            <div id="menu">
+                <a href="#">Автомобили</a>
+                <a href="#">Электромобили</a>
+                <a href="#">Онлайн Магазин</a>
+                <a href="#">Больше о BMW</a>
+            </div>
+            <div class="section">
+                <nav>
+                    <iconify-icon id="main_logo" style="color: rgb(116, 116, 116);" icon="simple-icons:bmw" height="52" width="52"></iconify-icon>
+                    <div class="navbar">
+                        <div class="nav_elems">
+                            <a class="nav_element" href="">Автомобили</a>
+                            <a class="nav_element" href="">Электромобили</a>
+                            <a class="nav_element" href="">Онлайн Магазин</a>
+                            <a class="nav_element" href="">Больше о БМВ</a>
+                        </div>
+                        <div class="burger_elems">
+                            <iconify-icon style="color: rgb(116, 116, 116);" icon="ion:location-outline" width="20" height="20"></iconify-icon>
+                            <iconify-icon style="color: rgb(116, 116, 116);" icon="carbon:search" width="20" height="20"></iconify-icon>
+                            <iconify-icon style="color: rgb(116, 116, 116);" id="burger" onclick="toggleMenu()" icon="iconamoon:menu-burger-horizontal-thin" width="32" height="32"></iconify-icon>
+                        </div>
+                    </div>
+                </nav>
+                <script>
+                    function toggleMenu() {
+                        const menu = document.getElementById('menu');
+                        const burger = document.getElementById('burger');
+                        const main_logo = document.getElementById('main_logo');
+                        const menu_shadow = document.getElementById('menu_shadow');
+                        menu_shadow.classList.toggle('show')
+                        main_logo.classList.toggle('fixed_logo');
+                        menu.classList.toggle('show');
+                        burger.classList.toggle('fixed_burger');
+                        }
+                </script>
+            </div>
+            <div class="bmw_name">
+                    <p>BMW i</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42" icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW iX</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW iX1</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW i8 Родстер</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW i8 Купе</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW i7</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW i7 M70 xDrive</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW i5</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW i5 M60 xDrive</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW i4</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW i4 M50</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img src="./assets/car_placeholder.png" alt="car_placeholder">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW iX3</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>X</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/01.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW XM</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/02.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X7</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/03.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X7 M60i xDrive</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/04.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X6</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/05.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X6(2023)</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/06.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X6 M</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/07.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X5 (2023)</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/08.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X5</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/09.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X5 M(2023)</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/10.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X5 M</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/11.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X4</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/12.png" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X4 M</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/13.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/14.png" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X3 M</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/15.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X2</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/16.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X1</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/17.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW iX</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/18.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/19.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW iX1</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/20.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW iX3</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>M</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m1.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW XM</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m2.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X7 M60i xDrive</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m3.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X6 M</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X5 M (2023)</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X5 M</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m6.png" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X4 M</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m7.png" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X3 M</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m8.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW X35i xDrive</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m9.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M8 Gran Coupe</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m10.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M8 Competition Cabrio</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m11.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW 8серии Coupe M</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m12.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW i7 M70 xDrive</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m13.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M760 xDrive</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m14.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW i5 M60 xDrive</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m15.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M440i xDrive Cabrio</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m16.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M4 Competiton Coupe</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m17.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M3 Sedan</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m18.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M3 Competition Touring</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m19.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M235i xDrive Gran Kupe</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m20.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M2 Coupe</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m21.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW M135i xDrive</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m22.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m23.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m24.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW i4 M50</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/m25.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW Z4 M40i Roadster</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>8</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/8-1.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/8-2.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW Z4 M40i Roadster</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/8-3.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/8-4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW Z4 M40i Roadster</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/8-5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/8-6.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/8-7.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW Z4 M40i Roadster</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>7</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/7-1.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/7-2.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/7-4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW Z4 M40i Roadster</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/7-3.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW Z4 M40i Roadster</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>5</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/BMW i5.png" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>4</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>3</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>2</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>1</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="bmw_name">
+                    <p>Z4</p>
+            </div>
+            <div class="section_auto section">
+                    <div class="logo_box">
+                        <div class="logo_img">
+                            <img  src="./assets/5.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <p>BMW X3 </p>
+                        </div>
+                    </div>
+                    <div class="logo_box">
+                        <div class="logo_logo">
+                            <iconify-icon width="42" height="42"icon="gravity-ui:plug-wire" rotate="270deg"></iconify-icon>
+                        </div>
+                        <div class="logo_img">
+                            <img  src="./assets/i5 4.webp" alt="">
+                        </div>
+                        <div class="logo_text">
+                            <img width="30px" height="21px" src="./assets/BMW_M_100px.png.asset.1583225507175.png" alt=".png">
+                            <p>BMW iX M60</p>
+                        </div>
+                    </div>
+            </div>
+        </main>
+        <footer>
+            <div class="section footer_section">
+                <div class="main_footer_block">
+                    <div class="footer_block">
+                        <p class="footer_paragraph">Дополнительная Информация</p>
+                        <a class="footer_link" href="">Обратная Связь</a>
+                        <a class="footer_link" href="">Выходные Данные</a>
+                        <a class="footer_link" href="">Юридическая Оговорка</a>
+                    </div>
+                    <div class="footer_block">
+                        <p class="footer_paragraph">Мир BMW</p>
+                        <a class="footer_link" href="">Корпоративные Продажи BMW</a>
+                        <a class="footer_link" href="">Часто Задаваемые Вопросы</a>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a class="social_link" href=""><iconify-icon style="color: rgb(82, 81, 81);" icon="mdi:instagram" width="32" height="32"></iconify-icon></a>
+                    <a class="social_link" href=""><iconify-icon style="color: rgb(82, 81, 81);" icon="mdi:twitter" width="32" height="32"></iconify-icon></a>
+                    <a class="social_link" href=""><iconify-icon style="color: rgb(82, 81, 81);" icon="mdi:youtube" width="32" height="32"></iconify-icon></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

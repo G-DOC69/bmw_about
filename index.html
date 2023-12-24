@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Roboto+Condensed:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <div id="menu_shadow"></div>
+            <div id="menu">
+                <a href="#">Автомобили</a>
+                <a href="#">Электромобили</a>
+                <a href="#">Онлайн Магазин</a>
+                <a href="#">Больше о BMW</a>
+            </div>
+            <div class="section intro_section">
+                <img class="section_img" src="./assets/bmw_i5_m_sport_2023_4k-HD.jpg" alt="">
+                <nav>
+                    <iconify-icon id="main_logo" style="color: rgb(116, 116, 116);" icon="simple-icons:bmw" height="52" width="52"></iconify-icon>
+                    <div class="navbar">
+                        <div class="nav_elems">
+                            <a class="nav_element" href="">Автомобили</a>
+                            <a class="nav_element" href="">Электромобили</a>
+                            <a class="nav_element" href="">Онлайн Магазин</a>
+                            <a class="nav_element" href="">Больше о БМВ</a>
+                        </div>
+                        <div class="burger_elems">
+                            <iconify-icon style="color: rgb(116, 116, 116);" icon="ion:location-outline" width="20" height="20"></iconify-icon>
+                            <iconify-icon style="color: rgb(116, 116, 116);" icon="carbon:search" width="20" height="20"></iconify-icon>
+                            <iconify-icon style="color: rgb(116, 116, 116);" id="burger" onclick="toggleMenu()" icon="iconamoon:menu-burger-horizontal-thin" width="32" height="32"></iconify-icon>
+                        </div>
+                    </div>
+                </nav>
+                <script>
+                    function toggleMenu() {
+                        const menu = document.getElementById('menu');
+                        const burger = document.getElementById('burger');
+                        const main_logo = document.getElementById('main_logo');
+                        const menu_shadow = document.getElementById('menu_shadow');
+                        menu_shadow.classList.toggle('show')
+                        main_logo.classList.toggle('fixed_logo');
+                        menu.classList.toggle('show');
+                        burger.classList.toggle('fixed_burger');
+                        }
+                </script>
+                <div class="promo_block">
+                    <p class="promo_paragraph">
+                        THE <span class="promo_header intro_promo_header">i5</span>
+                        <span class="promo_text intro_promo_text">
+                            <img width="30px" height="21px" class="promo_img" src="https://www.bmw.kg/content/dam/bmw/common/images/logo-icons/BMW_i/BMW_i_100px.png.asset.1583221945801.png" alt=".png">
+                            НОВЫЙ BMW i5. ЭЛЕКТРОМОБИЛЬ НА ВСЕ 100%.
+                        </span>
+                    </p>
+                    <a class="promo_button intro_promo_button" href="">Узнать Больше</a>
+                </div>
+            </div>
+            <div class="section custom_tools_section">
+                <h3 class="custom_tools_h3">ИНСТРУМЕНТЫ ПОКУПАТЕЛЯ</h3>
+                <h2 class="custom_tools_h2">Найди Свой BMW</h2>
+                <div class="custom_tools_container">
+                    <div class="custom_tools_block">
+                        <iconify-icon class="custom_tools_icon" icon="fluent:wrench-16-regular" width="80" height="80"></iconify-icon>
+                        Записаться на сервисные услуги
+                        <a class="tool_button" href="">Найти сейчас</a>
+                    </div>
+                    <div class="custom_tools_block">
+                        <iconify-icon class="custom_tools_icon"  icon="bx:user" width="80" height="80"></iconify-icon>
+                        Записаться на сервисное обслуживание
+                        <a class="tool_button" href="">Выбрать</a>
+                    </div>
+                    <div class="custom_tools_block">
+                        <iconify-icon class="custom_tools_icon"  icon="iconoir:list" width="80" height="80"></iconify-icon>
+                        Получить предложение
+                        <a class="tool_button" href="">Выбрать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <img class="section_img" src="./assets/bmw_5_series_4k-3840x2160.jpg" alt="">
+                <div class="promo_block">
+                    <p class="promo_paragraph">
+                        НОВЫЙ <span class="promo_header">BMW 5 СЕРИИ</span>
+                        <span class="promo_text">
+                            НОВЫЙ BMW 5 СЕРИИ.
+                        </span>
+                    </p>
+                    <a class="promo_button" href="">Узнать Больше</a>
+                </div>
+            </div>
+            <div class="section">
+                <img class="section_img" src="./assets/7series.jpg" alt="">
+                <div class="promo_block">
+                    <p class="promo_paragraph">
+                        THE 7 <span class="promo_header">АВТОМОБИЛИ M BMW 7 СЕРИИ.</span>
+                    </p>
+                    <a class="promo_button" href="">Узнать Больше</a>
+                </div>
+            </div>
+            <div class="section">
+                <img class="section_img" src="./assets/bmw_x3_m_competition_2021_4k_8k-HD.jpg" alt="">
+                <div class="promo_block">
+                    <p class="promo_paragraph">
+                        ПРИ ПОКУПКЕ ПО ПРОГРАММЕ TRADE-IN <span class="promo_header"> РАССРОЧКА 0% НА НОВЫЕ BMW X3 И BMW X4 </span>
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <img class="section_img" src="./assets/1142914.jpg" alt="">
+                <div class="promo_block">
+                    <p class="promo_paragraph">
+                        ЭЛЕКТРОФИЦИРОВАННЫЙ BMW <span class="promo_header"> РАДОСТЬ ОТ ЭЛЕКТРИЧЕСКОГО ВОЖДЕНИЯ. </span>
+                    </p>
+                    <a class="promo_button" href="">Узнать Больше</a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="promo_block outro_promo_block">
+                    <p class="promo_paragraph outro_promo_paragraph">
+                        АКСЕССУАРЫ BMW <span class="promo_header outro_promo_header">BMW WALLBOX</span>
+                        <span class="promo_text outro_promo_text">
+                            BMW Wallbox — это непревзойденное удобство использования электричества — зарядное устройство 2-го уровня, которое устанавливается в вашем гараже для быстрой зарядки, когда вам это нужно.
+                        </span>
+                    </p>
+                    <a class="promo_button outro_promo_button" href="">Узнать Больше</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="section footer_section">
+                <div class="main_footer_block">
+                    <div class="footer_block">
+                        <p class="footer_paragraph">Дополнительная Информация</p>
+                        <a class="footer_link" href="">Обратная Связь</a>
+                        <a class="footer_link" href="">Выходные Данные</a>
+                        <a class="footer_link" href="">Юридическая Оговорка</a>
+                    </div>
+                    <div class="footer_block">
+                        <p class="footer_paragraph">Мир BMW</p>
+                        <a class="footer_link" href="">Корпоративные Продажи BMW</a>
+                        <a class="footer_link" href="">Часто Задаваемые Вопросы</a>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a class="social_link" href=""><iconify-icon style="color: rgb(82, 81, 81);" icon="mdi:instagram" width="32" height="32"></iconify-icon></a>
+                    <a class="social_link" href=""><iconify-icon style="color: rgb(82, 81, 81);" icon="mdi:twitter" width="32" height="32"></iconify-icon></a>
+                    <a class="social_link" href=""><iconify-icon style="color: rgb(82, 81, 81);" icon="mdi:youtube" width="32" height="32"></iconify-icon></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
